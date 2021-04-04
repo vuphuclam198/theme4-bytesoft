@@ -1,0 +1,118 @@
+@font-face {
+  font-family:  Arial;
+  src: url("../../../../dist/fonts/Arial.TTF");
+}
+@font-face {
+    font-family: iCielCucho-Bold;
+    src: url("../../../../dist/fonts/iCielCucho-Bold.otf");
+  }
+
+@font-face {
+  font-family: iCiel-Rukola;
+  src: url("../../../../dist/fonts/iCiel-Rukola.otf");
+}
+
+@font-face {
+  font-family: MyriadPro-Regular;
+  src: url("../../../../dist/fonts/MyriadPro-Regular.ttf");
+}
+
+@font-face {
+  font-family: SVN-TheCarpenter-Regular;
+  src: url("../../../../dist/fonts/SVN-TheCarpenter-Regular.otf");
+}
+
+@font-face {
+  font-family: MyriadPro-Bold;
+  src: url("../../../../dist/fonts/MyriadPro-Bold.ttf");
+}
+
+@font-face {
+  font-family: UTM-Avo;
+  src: url("../../../../dist/fonts/UTM-Avo.ttf");
+}
+
+body{
+  font-family: UTM-Avo;
+  background-image: url("../../../../dist/images/bg-body.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  &.contact{
+    
+  }
+
+
+}
+
+#wrapper{
+  max-width: 1053px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.img-fluid{
+  max-width: 100%;
+}
+
+main{
+  padding: 20px 15px;
+  background: #fff;
+  position: relative;
+  box-shadow: 0 3px 3px rgba(132, 131, 131, 0.38);
+  margin-bottom: 70px;
+  .bg-main{
+    background: #f1eec5;
+    box-shadow: 0 3px 3px rgba(132, 131, 131, 0.38);
+
+    &::before{
+      content: "";
+      position: absolute;
+      background-image: url("../../../../dist/images/footer-bg-center.jpg");
+      width: 50px;
+      height: 23px;
+      left: 50%;
+      bottom: -17px;
+      transform: translateX(-50%);
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &::before{
+    content: "";
+    position: absolute;
+    background-image: url("../../../../dist/images/footer-bottom-left.png");
+    width: 46px;
+    height: 60px;
+    left: -8px;
+    bottom: -24px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  &::after{
+    content: "";
+    position: absolute;
+    background-image: url("../../../../dist/images/footer-bg-right.png");
+    width: 46px;
+    height: 60px;
+    right: -8px;
+    bottom: -24px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and(max-width:767px){
+  main{
+    padding: 15px 10px;
+  }
+
+}
+
+@media only screen and(max-width:479px){
+  #wrapper{
+    overflow: hidden;
+  }
+}

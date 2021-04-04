@@ -1,0 +1,608 @@
+.section-banner{
+    padding: 0 5px;
+    border-top: 1px solid #eee4bf;
+    position: relative;
+    &::before{
+        content: "";
+        background-image: url("../../../dist/images/slider-top-left-corner.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: absolute;
+        top: -5px;
+        left: 0;
+        width: 34px;
+        height: 33px;
+    }
+
+    &::after{
+        content: "";
+        background-image: url("../../../dist/images/slider-top-right-corner.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: absolute;
+        top: -5px;
+        right: -3px;
+        width: 33px;
+        height: 34px;
+    }
+    .banner-content{
+        padding: 5px;
+        background: #f6f4d9;
+        border: 1px solid #fff;
+        .bg-img{
+            background-image: url(../../../dist/images/bg-img-banner.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            // padding-top: 25px;
+            // padding-bottom: 30px;
+            img{
+                width: 100%;
+                // height: 350px;
+                display: block;
+                height: 405px;
+                padding: 25px 23px 30px 23px;
+                position: relative;
+                z-index: 1;
+            }
+        }
+
+        &::before{
+            content: "";
+            background-image: url("../../../dist/images/slider-bottom-left-corner.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 34px;
+            height: 33px;
+        }
+
+        &::after{
+            content: "";
+            background-image: url("../../../dist/images/slider-bottom-right-corner.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            position: absolute;
+            bottom: -5px;
+            right: -3px;
+            width: 33px;
+            height: 34px;
+        }
+    }
+}
+
+.wrapper-main{
+    .section-kids-top{
+        padding: 0 10px;
+        margin-bottom: 22px;
+        margin-top: 20px;
+        .item{
+            position: relative;
+            .img{
+                margin-bottom: 12px;
+                .bg-img{
+                    background-image: url("../../../dist/images/gallery-thumb-bg.png");
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                    img{
+                        width: 100%;
+                        display: block;
+                        margin: 0 auto;
+                        padding: 17px;
+                    }
+    
+                }
+            }
+    
+            .content{
+                max-width: 203px;
+                margin: 0 auto;
+                text-align: center;
+                margin-bottom: 23px;
+                .item-content__link{
+                    color: #121314;
+                    font-size: 13px;
+                    font-weight: bold;
+                    letter-spacing: 0.2px;
+                }
+            }
+    
+            .see-more{
+                text-align: center;
+                padding-bottom: 32px;
+                .link{
+                    font-size: 12px;
+                    color: #fff;
+                    font-family: iCielCucho-Bold;
+                    padding: 9px 18px;
+                    background: #31b9e1;
+                    border-radius: 10px;
+                }
+            }
+    
+            &::after{
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: calc(100% - 40px);
+                height: 1px;
+                background: #f3cba2;
+            }
+        }
+    }
+    
+    .section-congress{
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 33px;
+        .congress-content{
+            border: 1px solid #fff;
+            padding: 2px 4px;
+            background: #f6f4d9;
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                background-image: url("../../../dist/images/page-preview-top-left-corner.jpg");
+                width: 18px;
+                height: 18px;
+                left: -2px;
+                top: -2px;
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+    
+            &::after{
+                content: "";
+                position: absolute;
+                background-image: url("../../../dist/images/page-preview-top-right-corner.jpg");
+                width: 18px;
+                height: 18px;
+                right: -2px;
+                top: -2px;
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+            .bg-congress{
+                background-image: url("../../../dist/images/bg-img-banner.jpg");
+                background-size: 100%;
+                // background-repeat: no-repeat;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    background-image: url("../../../dist/images/page-preview-bottom-left-corner.jpg");
+                    width: 18px;
+                    height: 18px;
+                    left: -2px;
+                    bottom: -2px;
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                }
+        
+                &::after{
+                    content: "";
+                    position: absolute;
+                    background-image: url("../../../dist/images/page-preview-bottom-right-corner.jpg");
+                    width: 18px;
+                    height: 18px;
+                    right: -2px;
+                    bottom: -2px;
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                }
+                .item{
+                    position: relative;
+                    margin: 15px 10px;
+                    .img{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 85px;
+                    }
+    
+                    .item__content{
+                        padding-left: 104px;
+                        padding-right: 5px;
+                        .title{
+                            margin-bottom: 3px;
+                            a{
+                                font-family: SVN-TheCarpenter-Regular;
+                                color: #ec7417;
+                                font-size: 20px;
+                            }
+                        }
+    
+                        .time{
+                            margin-bottom: 6px;
+                            p{
+                                font-family: MyriadPro-Regular;
+                                color: #ec7417;
+                                font-size: 7px;
+                                letter-spacing: 0.1px;
+                                margin-bottom: 0;
+                                &::before{
+                                    content: "\f017";
+                                    font-family: FontAwesome;
+                                    color: #ec7417;
+                                    margin-right: 2px;
+                                }
+                            }
+                        }
+    
+                        .content{
+                            .description{
+                                font-size: 8px;
+                                letter-spacing: 0.4px;
+                                line-height: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .section-photo-week{
+        padding: 0 15px;
+        padding-bottom: 60px;
+        .item{
+            text-align: center;
+            .img{
+                // padding-top: 13px;
+                // padding-bottom: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                background-image: url("../../../dist/images/bg-photo-week.jpg");
+                background-size: 100%;
+                background-repeat: no-repeat;
+                margin-bottom: 13px;
+                // &::before{
+                //     content: "";
+                //     position: absolute;
+                //     top: 0;
+                //     left: 0;
+                //     background-image: url("../../../dist/images/bg-photo-week.jpg");
+                //     background-size: 100%;
+                //     background-repeat: no-repeat;
+                //     width: 100%;
+                //     height: 100%;
+                //     z-index: -1;
+                // }
+    
+                img{
+                    width: 100%;
+                    display: block;
+                    padding: 10px;
+                }
+            }
+    
+            .title{
+                margin-bottom: 3px;
+                a{
+                    font-family: SVN-TheCarpenter-Regular;
+                    color: #ec7417;
+                    font-size: 28px;
+                }
+            }
+    
+            .time{
+                p{
+                    font-family: MyriadPro-Regular;
+                    font-size: 12px;
+                    letter-spacing: 0.2px;
+                    color: #121314; 
+                    margin-bottom: 7px;
+    
+                    &::before{
+                        content: "\f017";
+                        font-family: FontAwesome;
+                        color: #121314;
+                        margin-right: 2px;
+                    }
+                }
+            }
+    
+            .content{
+                margin-bottom: 13px;
+                p{
+                    font-weight: bold;
+                    max-width: 193px;
+                    margin: 0 auto;
+                    font-size: 10px;
+                    text-align: center;
+                    letter-spacing: 0.3px;
+                    line-height: 19px;
+                }
+            }
+    
+            .see-more{
+                .link{
+                    font-family: iCielCucho-Bold;
+                    font-size: 10px;
+                    padding: 8px 18px;
+                    background: #98d0fc;
+                    color: #fff;
+                    border-radius: 10px;
+                    display: inline-block;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+    
+
+    // .sidebar-right.news{
+    //     position: absolute;
+    //     top: 64px;
+    //     right: 40px;
+    //     max-width: 224px;
+    // }
+}
+
+@media only screen and(min-width:992px) and (max-width:1199px){
+
+}
+
+@media only screen and(min-width:768px) and (max-width:991px){
+    .section-banner{
+        .banner-content{
+            .bg-img{
+                img{
+                    height: auto;
+                    padding: 20px 15px;
+                }
+            }
+        }
+    }
+
+    .wrapper-main{
+            .section-kids-top{
+                margin-bottom: 40px;
+                .item{
+                    .img{
+                        .bg-img{
+                            img{
+                                padding: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .section-congress{
+                margin-bottom: 50px;
+                .congress-content{
+                    .bg-congress{
+                        .item{
+                            margin-bottom: 30px;
+                            .item__content{
+                                padding-left: 100px;
+
+                                .title{
+                                    a{
+                                        font-size: 20px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        // .sidebar-right{
+        //     max-width: 190px;
+        // }
+    }
+}
+
+@media only screen and(max-width:767px){
+    .section-banner{
+        padding: 0 3px;
+        &::before{
+            width: 25px;
+            height: 25px;
+        }
+
+        &::after{
+            width: 25px;
+            height: 25px;
+            right: 0;
+        }
+
+        .banner-content{
+            &::before{
+                width: 25px;
+                height: 25px;
+            }
+
+            &::after{
+                width: 25px;
+                height: 25px;
+                right: 0;
+            }
+            .bg-img{
+                img{
+                    padding: 2%;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    .wrapper-main{
+        padding: 0 15px;
+        .section-kids-top{
+            padding: 0;
+            .item{
+                max-width: 400px;
+                margin: 15px auto;
+                display: block;
+                overflow: auto;
+                margin-bottom: 30px;
+                .img{
+                    img{
+                        width: 100%;
+                    }
+                }
+
+                .content{
+                    max-width: 250px;
+                    .item-content__link{
+                        font-size: 15px;
+                    }
+                }
+
+                .see-more{
+                    padding-bottom: 55px;
+                }
+            }
+        }
+
+        .section-congress{
+            padding: 0;
+
+            .congress-content{
+                .bg-congress{
+                    .item{
+                        overflow: auto;
+                        .item__content{
+                            .title{
+                                a{
+                                    font-size: 23px;
+                                }
+                            }
+                            .time{
+                                p{
+                                    font-size: 10px;
+                                }
+                            }
+
+                            .content{
+                                .description{
+                                    font-size: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .section-photo-week{
+            padding-left: 0;
+            padding-right: 0;
+            padding-bottom: 0;
+            .item{
+                overflow: auto;
+                margin-bottom: 30px;
+                .content{
+                    max-width: 300px;
+                    margin: 0 auto;
+                    margin-bottom: 25px;
+                    p{
+                        font-size: 15px;
+                        max-width: none;
+                    }
+                }
+
+                .see-more{
+                    .link{
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and(max-width:479px){
+    .section-banner{
+        &::before{
+            width: 20px;
+            height: 20px;
+            top: -3px;
+        }
+
+        &::after{
+            width: 20px;
+            height: 20px;
+            top: -3px;
+        }
+        .banner-content{
+            &::before{
+                width: 20px;
+                height: 20px;
+            }
+
+            &::after{
+                width: 20px;
+                height: 20px;
+            }
+
+            .bg-img{
+                img{
+                    padding: 0;
+                }
+            }
+        }
+    }
+    .wrapper-main{
+        .section-kids-top{
+            .item{
+                .img{
+                    .bg-img{
+                        img{
+                            padding: 6%;
+                        }
+                    }
+                }
+            }
+        }
+        .section-congress{
+            .congress-content{
+                .bg-congress{
+                    .item{
+                        .img{
+                            position: unset;
+                            width: unset;
+                            img{
+                                width: 100%;
+                                object-fit: cover;
+                            }
+                        }
+
+                        .item__content{
+                            padding-left: 0;
+                            text-align: center;
+                            margin-top: 15px;
+
+                            .title{
+                                a{
+                                    font-size: 25px;
+                                }
+                            }
+
+                            .time{
+                                margin-top: 10px;
+                                p{
+                                    font-size: 10px;
+                                }
+                            }
+
+                            .content{
+                                max-width: 300px;
+                                padding: 0 10px;
+                                margin: 0 auto;
+
+                                .description{
+                                    font-size: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

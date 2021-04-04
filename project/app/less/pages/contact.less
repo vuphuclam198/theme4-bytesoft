@@ -1,0 +1,305 @@
+.lienhe{
+    #wrapper{
+        main{
+            padding: 20px 24px 30px 12px;
+            .bg-main{
+                padding-top: 22px;
+            }
+        }
+    }
+}
+
+.section-contact{
+    margin: 0 25px 0 20px;
+    padding: 0 5px;
+    // background-image: url("../../../dist/images/bg-contact.jpg");
+    // width: 100%;
+    // height: 100%;
+    object-fit: contain;
+    // background-color: #fdfdf9;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    .module-header{
+        margin-bottom: 22px;
+        .title{
+            margin: 0;
+            color: #db643c;
+            font-size: 24px;
+            font-family: Arial;
+            padding-bottom: 25px;
+            padding-top: 10px;
+            position: relative;
+            &::before{
+                content: "";
+                display: table;
+                height: 4px;
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                background-color: #d8e3cc;
+            }
+        }
+    }
+
+    .module-content{
+        .main-content{
+            .sidebar-left-contact{
+                background-color: #fafaf7;
+                margin-bottom: 90px;
+                .item{
+                    .yourself{
+                        form{
+                            position: relative;
+                            &::after{
+                                content: "";
+                                position: absolute;
+                                bottom: 0;
+                                background-image: url("../../../dist/images/footer-bottom-letter.png");
+                                width: 100%;
+                                height: 10px;
+                                background-size: 100%;
+                                background-repeat: no-repeat;
+                            }
+                            .form-contact{
+                                margin-bottom: 56px;
+                                .title{
+                                    padding-top: 20px;
+                                    padding-bottom: 27px;
+                                    p{
+                                        font-size: 18px;
+                                        text-align: center;
+                                        /* font-family: Arial; */
+                                        font-style: italic;
+                                        color: #287ab5;
+
+                                    }
+                                }
+                                
+                                .form-list{
+                                    .form-list__item{
+                                        position: relative;
+                                        .label__link{
+                                            width: 50px;
+                                            position: absolute;
+                                            left: 23px;
+                                            top: 50%;
+                                            transform: translateY(-50%);
+                                            margin-bottom: 0;
+                                            font-size: 13px;
+                                            text-align: right;
+                                        }
+    
+                                        .value{
+                                            padding-left: 90px;
+                                            max-width: 400px;
+                                            .input__value{
+                                                border: none;
+                                                border-bottom: 1px dotted #000;
+                                                background: none;
+                                                border-radius: unset;
+                                                height: 30px;
+                                                font-size: 13px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .form-message{
+                                .title{
+                                    margin-bottom: 25px;
+                                    p{
+                                        text-align: center;
+                                        font-size: 18px;
+                                        font-style: italic;
+                                        color: #287ab5;
+                                    }
+                                }
+
+                                .content{
+                                    padding: 0 10px;
+                                    .message__value{
+                                        border: none;
+                                        background: none;
+                                        box-shadow: none;
+                                        background-image: url("../../../dist/images/bg-message.jpg");
+                                        background-size: 100%;
+                                        height: 236px;
+                                        margin-bottom: 25px;
+                                        font-size: 13px;
+                                    }
+                                }
+                            }
+
+                            .btn{
+                                padding-bottom: 50px;
+                                text-align: center;
+                                width: 100%;
+                                .btn__send{
+                                    background-image: url("../../../dist/images/button-send.png");
+                                    background-size: 100%;
+                                    background-repeat: no-repeat;
+                                    background-color: snow;
+                                    width: 65px;
+                                    height: 27px;
+                                    display: block;
+                                    margin: 0 auto;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .sidebar-right-contact{
+                .item{
+                    .location{
+                        background: #fff;
+                        margin-bottom: 15px;
+                        iframe{
+                            width: 100%;
+                            height: 350px;
+                            padding: 4px;
+                        }
+                    }
+
+                    .infomation{
+                        .infomation-list{
+                            .infomation-list__item{
+                                font-family: Arial;
+                                padding-right: 5px;
+                                margin-bottom: 18px;
+                                .title{
+                                    margin-bottom: 16px;
+                                    p{
+                                        font-size: 11px;
+                                        color: #287ab5;
+                                        font-weight: bold;
+                                        margin-bottom: 0;
+                                    }
+                                }
+
+                                .document{
+                                    p{
+                                        font-size: 12px;
+                                        line-height: 19px;
+                                        margin: 0;
+                                        color: #287ab5;
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and(min-width:1200px){
+    .section-contact{
+        .module-content{
+            .main-content{
+                .sidebar-right-contact{
+                    .item{
+                        .location{
+                            iframe{
+                                height: 308px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and(max-width:767px){
+    .section-contact{
+        margin: 0 15px;
+        padding: 0;
+        .module-content{
+            .main-content{
+                .sidebar-left-contact{
+                    .item{
+                        .yourself{
+                            form{
+                                .form-contact{
+                                    .title{
+                                        p{
+                                            font-size: 16px;
+                                        }
+                                    }
+
+                                    .form-list{
+                                        .form-list__item{
+                                            .label__link{
+                                                width: 40px;
+                                                left: 20px;
+                                                font-size: 10px;
+                                            }
+
+                                            .value{
+                                                padding-left: 75px;
+                                                padding-right: 20px;
+                                                max-width: none;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .form-message{
+                                    .title{
+                                        p{
+                                            font-size: 16px;
+                                        }
+                                    }
+                                }
+
+                                .btn{
+                                    .btn__send{
+                                        width: 70px;
+                                        height: 30px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and(max-width:479px){
+    .lienhe{
+        #wrapper{
+            main{
+                padding: 15px;
+            }
+        }
+    }
+    .section-contact{
+        .module-header{
+            .title{
+                &::before{
+                    height: 2px;
+                }
+            }
+        }
+
+        .module-content{
+            .main-content{
+                .sidebar-right-contact{
+                    .item{
+                        .location{
+                            iframe{
+                                height: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
